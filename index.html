@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/e26316daf2.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="start" id="startdiv">
+        <h1>Welcome to random Quiz</h1>
+        <p id="p1">click button to start the quiz</p>
+        <button id="start" type="button" onclick="startQuiz()">Start</button>
+
+    </div>
+    <div class="quiz" id="quiz">
+        <p id="score">Score: 0/10</p>
+        <p id="question">What is the capital of India?</p>
+        <div class="cat-level">
+            <h6 id="category">Geography</h4>
+            <h6 id="difficulty">Hard</h4>
+        </div>
+        <p id="option1" onclick="checkAnswer(this)">Delhi </p>
+        <p id="option2" onclick="checkAnswer(this)">Mumbai </p>
+        <p id="option3" onclick="checkAnswer(this)">Pune </p>
+        <p id="option4" onclick="checkAnswer(this)">Chennai </p>
+
+        <button id="next" type="button" onclick="nextQuestion()">Next</button>
+    </div>
+    <div class="scorediv" id="scorediv">
+        <h1>Your Score</h1>
+        <p id="finalscore">Score: 0/10</p>
+        <button type="button" onclick="playagain()" id="playagain">Play Again</button>
+    </div>
+    
+
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
